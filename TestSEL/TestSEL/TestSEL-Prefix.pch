@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TestSEL' target in the 'TestSEL' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
