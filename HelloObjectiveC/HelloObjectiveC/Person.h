@@ -15,7 +15,7 @@
 }
 
 - (Person*)initWithWeight:(int)weight;
-- (void)print:(NSString*)input;
+- (void)showLog:(NSString*)input;
 
 @property(strong,readwrite)NSString* name;
 @property(readonly)float weight;

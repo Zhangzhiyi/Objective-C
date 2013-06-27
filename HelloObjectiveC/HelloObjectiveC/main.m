@@ -47,9 +47,10 @@ int main(int argc, const char * argv[])
         NSLog(@"person weight=\"%f\"",person.weight);
         
         //选择器访问方法
-        SEL print = NSSelectorFromString(@"print:");
-        IMP imp=[person methodForSelector:print];
-        imp(person, print, @"********");
+        //SEL log = NSSelectorFromString(@"showLog:");
+        SEL log = @selector(showLog:);
+        IMP imp = [person methodForSelector:log];
+        //imp(person, log, @"???????????????");  //为什么会报错？
 
         
         Fraction *fraction = [[Fraction alloc] initWithNumerator:1 andDenominator:2];

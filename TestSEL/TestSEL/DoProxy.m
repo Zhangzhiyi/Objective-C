@@ -19,15 +19,18 @@
     cattle[1] = [[bullClass alloc] init];
     cattle[2] = [[bullClass alloc] init];
     
-    say = @selector(saySomething);
-    skin = NSSelectorFromString(SET_SKIN_COLOR);
+    say = @selector(saySomething);  //saySomething函数没有参数是没有:的
+    //say = NSSelectorFromString(@"saySomething");
+    
+    skin = NSSelectorFromString(SET_SKIN_COLOR);//setSkinColor函数有参数是要加上:
+    //skin = @selector(setSkinColor:);
 }
 - (void) doWithCattleId:(id)aCattle colorParam:(NSString *)color
 {
     //第一次运行的时候
     if (notFirstRun == NO)
     {
-        NSString *myName = NSStringFromSelector(_cmd);
+        NSString *myName = NSStringFromSelector(_cmd);//取当前运行的方法
         NSLog(@"Running in the method of %@", myName);
         notFirstRun = YES;
     }

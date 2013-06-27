@@ -20,7 +20,7 @@
 }
 @synthesize name;
 @synthesize weight;
-- (void)print:(NSString *)input{
+- (void)showLog:(NSString *)input{
     NSLog(@"%@", input);
 }
 - (void)dealloc
