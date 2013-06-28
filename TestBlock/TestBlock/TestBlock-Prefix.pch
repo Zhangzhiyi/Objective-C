@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TestBlock' target in the 'TestBlock' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
