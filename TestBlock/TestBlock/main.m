@@ -71,6 +71,14 @@ int main(int argc, const char * argv[])
             NSLog(@"blockLocal:%d", blockLocal);
         };
         changeBlockLocalField();
+        
+        //可以是个数组类型
+        void (^p[2])(void)={
+            ^(void){NSLog(@"block0");},
+            ^(void){NSLog(@"block1");}
+        };
+        p[0]();
+        p[1]();
     }
     return 0;
 }
