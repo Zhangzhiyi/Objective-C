@@ -45,6 +45,8 @@ int main(int argc, const char * argv[])
         person.name=@"ET";
         NSLog(@"person name=\"%@\"", person.name);
         NSLog(@"person weight=\"%f\"",person.weight);
+        NSLog(@"person tel=\"%@\"", person.tel);    //13926208944
+        NSLog(@"person address=\"%@\"", person.address); //null
         
         //选择器访问方法
         //SEL log = NSSelectorFromString(@"showLog:");

@@ -15,6 +15,10 @@
     self=[super init];
     if(self){
         weight = w;
+        _tel = @"13926208944";
+        //self.tel = @"13926208944";
+        
+        address = @"huajing";
     }
     return self;
 }
