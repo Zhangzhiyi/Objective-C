@@ -18,7 +18,7 @@
         _tel = @"13926208944";
         //self.tel = @"13926208944";
         
-        address = @"huajing";
+        address = @"huajing"; //main调用person.address打印出来是null
     }
     return self;
 }

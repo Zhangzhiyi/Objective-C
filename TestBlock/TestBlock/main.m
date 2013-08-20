@@ -27,6 +27,11 @@ int main(int argc, const char * argv[])
         };
         printBlock(@"Hello, block");
         
+        int (^myblock)(int) = ^(int num)    //也可以不写返回值^int(int num)
+        {
+            return num;
+        };
+        NSLog(@"%d", myblock(100));
         //代码用在字符串数组排序
         NSArray* array = @[@"abc 1", @"abc 21", @"abc 12", @"abc 13", @"abc 05"];
         NSComparator sortBlock =^(id string1, id string2)
