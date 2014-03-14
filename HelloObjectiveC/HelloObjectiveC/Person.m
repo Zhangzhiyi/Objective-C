@@ -14,6 +14,7 @@
 - (Person*)initWithWeight:(int)w{
     self=[super init];
     if(self){
+        name = @"NULL";
         weight = w;
         _tel = @"13926208944";
         //self.tel = @"13926208944";
@@ -31,5 +32,8 @@
 {
     [self setName:nil];
 }
-
+- (void)say
+{
+    NSLog(@"Person的say方法");
+}
 @end

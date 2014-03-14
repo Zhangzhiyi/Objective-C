@@ -13,10 +13,12 @@
     NSString *name;
     float weight;
     NSString *address;
+    
 }
 
 - (Person*)initWithWeight:(int)weight;
 - (void)showLog:(NSString*)input;
+- (void)say;
 
 @property(strong,readwrite)NSString* name;
 @property(readonly)float weight;

@@ -8,6 +8,9 @@
 
 #import "Fraction.h"
 
+@interface Fraction()
+
+@end
 
 @implementation Fraction
 
@@ -46,12 +49,17 @@
 }
 - (void)print{
     printf("%d/%d\n",numerator,denominator);
+    [[self class] callClassMethod];
 }
 + (void) callClassMethod{
     NSLog(@"callClassMethod");
 }
 - (void)print1{
     NSLog(@"接口1的方法");
+}
++ (void)staticProtocolMethod
+{
+    NSLog(@"静态接口方法");
 }
 - (void)print2{
     NSLog(@"接口2的方法");

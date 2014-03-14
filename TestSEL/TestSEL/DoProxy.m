@@ -30,6 +30,7 @@
     //第一次运行的时候
     if (notFirstRun == NO)
     {
+        //使用_cmd获取方法自己的SEL
         NSString *myName = NSStringFromSelector(_cmd);//取当前运行的方法
         NSLog(@"Running in the method of %@", myName);
         notFirstRun = YES;

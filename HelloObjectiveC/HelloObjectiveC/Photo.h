@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+static const NSString *kCamera = @"Nikon";
+#define CAMERA_MODEL @"Nikon"
+#define CAMERA_MODEL2 "Nikon"
 
 @interface Photo : NSObject {
     NSString* caption;

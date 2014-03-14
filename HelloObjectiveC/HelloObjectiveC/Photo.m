@@ -8,7 +8,6 @@
 
 #import "Photo.h"
 
-
 @implementation Photo
 
 - (id)init
@@ -29,11 +28,21 @@
 - (void) setCaption:(NSString *)input{
     caption = input;
 }
-- (void)setPhotographer:(NSString *)input{
 
+/*1，实例方法里面的self，是对象的首地址。
+
+2，类方法里面的self，是Class.
+
+尽管在同一个类里面的使用self，但是self却有着不同的解读。在类方法里面的self，可以翻译成class self；在实例方法里面的self，
+应该被翻译成为object self。在类方法里面的self和实例方法里面的self有着本质上的不同，尽管他们的名字都叫self。*/
+- (void)setPhotographer:(NSString *)input{
+    [self print];
+    //[self classprnt]; 报错
     photographer = input;
 }
 + (NSString*)classname{
+    [self classprint];
+    //[self print]; 报错
     return (@"Photo");
 }
 

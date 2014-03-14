@@ -11,7 +11,8 @@
 
 @interface Fraction : NSObject <Protocol1,Protocol3>{
     int numerator;
-    @public int denominator;
+    @public
+    int denominator;
     
 }
 

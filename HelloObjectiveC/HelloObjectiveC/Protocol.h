@@ -11,6 +11,7 @@
 
 @protocol Protocol1 
 - (void)print1;
++ (void)staticProtocolMethod;
 @end
 
 @protocol Protocol2
